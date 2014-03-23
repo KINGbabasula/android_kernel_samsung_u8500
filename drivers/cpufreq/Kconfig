@@ -100,6 +100,10 @@ config CPU_FREQ_DEFAULT_GOV_CONSERVATIVE
 	  governor. If unsure have a look at the help section of the
 	  driver. Fallback governor will be the performance governor.
 
+config CPU_FREQ_DEFAULT_GOV_PEGASUSQPLUS
+	bool "pegasusq plus"
+	select CPU_FREQ_GOV_PEGASUSQPLUS
+
 config CPU_FREQ_DEFAULT_GOV_INTERACTIVE
 	bool "interactive"
 	select CPU_FREQ_GOV_INTERACTIVE
@@ -262,6 +266,9 @@ config CPU_FREQ_GOV_ABYSSPLUG
 
 config CPU_FREQ_GOV_PEGASUSQ
 	tristate "'pegasusq' cpufreq policy governor"
+
+config CPU_FREQ_GOV_PEGASUSQPLUS
+	tristate "'pegasusq plus' cpufreq policy governor"
 
 config CPU_FREQ_GOV_ONDEMANDQ
 	tristate "'ondemand' cpufreq policy governor"
