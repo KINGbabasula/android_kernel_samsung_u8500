@@ -1,4 +1,3 @@
-
 #line 3 "scripts/kconfig/lex.zconf.c"
 
 #define  YY_INT_ALIGNED short int
