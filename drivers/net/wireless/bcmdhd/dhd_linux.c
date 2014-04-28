@@ -515,7 +515,7 @@ uint dhd_pktgen_len = 0;
 module_param(dhd_pktgen_len, uint, 0);
 #endif /* SDTEST */
 
-static char dhd_version[] = "Dongle Host Driver, version " EPI_VERSION_STR
+static char dhd_version[] = "Dongle Host Driver, version " EPI_VERSION_STR;
 
 static void dhd_net_if_lock_local(dhd_info_t *dhd);
 static void dhd_net_if_unlock_local(dhd_info_t *dhd);
